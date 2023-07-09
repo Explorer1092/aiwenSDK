@@ -86,7 +86,7 @@ class BaseMultiArea(Base):
                                         area.get("radius", ""),
                                         area.get("prov", ""),
                                         area.get("city", ""),
-                                        area.get("district", ""))
+                                        area.get("district", "")).to_dict()
                                         )
 
 class City(BaseSingleArea):
@@ -328,7 +328,7 @@ class IPHost():
         for dto in dict_data.get("asInfo", []):
             self.asInfo.append(AsInfo(dto.get("asname", ""),
                                         dto.get("asnumber", ""),
-                                        dto.get("isp", "")))
+                                        dto.get("isp", "")).to_dict())
             
     def to_dict(self):
         return {
