@@ -158,7 +158,6 @@ class IPHost():
     def __init__(self, dict_data):
         self.owner = dict_data.get("owner", "")
         self.asInfo = []
-        self.asInfo = asInfo(dict_data.get("asInfo", ""))
         for dto in dict_data.get("asInfo", []):
             self.asInfo.append(AsInfo(dto.get("asname", ""),
                                         dto.get("asnumber", ""),
