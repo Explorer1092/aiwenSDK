@@ -541,7 +541,7 @@ class streetPSI():
                                         area.get("radius", ""),
                                         area.get("prov", ""),
                                         area.get("city", ""),
-                                        area.get("district", "")))
+                                        area.get("district", "")).to_dict())
         
     def to_dict(self):
         return {
@@ -606,7 +606,7 @@ class streetBIZ():
                                         area.get("radius", ""),
                                         area.get("prov", ""),
                                         area.get("city", ""),
-                                        area.get("district", "")))
+                                        area.get("district", "")).to_dict())
             
     def to_dict(self):
         return {
