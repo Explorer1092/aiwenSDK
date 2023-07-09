@@ -1,0 +1,13 @@
+setup.py
+aiwenSDK.egg-info/PKG-INFO
+aiwenSDK.egg-info/SOURCES.txt
+aiwenSDK.egg-info/dependency_links.txt
+aiwenSDK.egg-info/top_level.txt
+awEnum/CoordSys.py
+awEnum/MultiFlag.py
+awEnum/SceneLang.py
+awEnum/StreetSubType.py
+awException/aiwenException.py
+awModel/aiwenKey.py
+awModel/aiwenModels.py
+client/aiwenClient.py
