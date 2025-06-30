@@ -3,7 +3,7 @@
 埃文SDK - 对埃文商业API的网络请求封装
 """
 
-__version__ = '1.0.5'
+__version__ = '1.0.6'
 __author__ = 'aiwen'
 __email__ = 'sales@ipplus360.com'
 
