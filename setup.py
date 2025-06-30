@@ -1,4 +1,4 @@
-from distutils.core import setup
+from setuptools import setup, find_packages
 
 setup(
     # 指定项目名称，我们在后期打包时，这就是打包的包名称，当然打包时的名称可能还会包含下面的版本号哟~
@@ -13,7 +13,13 @@ setup(
     author_email='sales@ipplus360.com',
     # 写上项目的地址，比如你开源的地址开源写博客地址，也开源写GitHub地址，自定义的官网地址等等。
     url='https://www.ipplus360.com',
-    # 指定包名，即你需要打包的包名称，要实际在你本地存在哟，它会将指定包名下的所有"*.py"文件进行打包哟，但不会递归去拷贝所有的子包内容。
-    # 综上所述，我们如果想要把一个包的所有"*.py"文件进行打包，应该在packages列表写下所有包的层级关系哟~这样就开源将指定包路径的所有".py"文件进行打包!
-    packages=['client', 'awEnum', 'awModel', 'awException'],
+    # 使用 find_packages 自动发现 src 目录下的所有包
+    packages=find_packages(where='src'),
+    # 指定包的根目录
+    package_dir={'': 'src'},
+    # Python 版本要求
+    python_requires='>=3.6',
+    # 长描述，通常从 README 文件读取
+    long_description=open('README.md').read(),
+    long_description_content_type='text/markdown',
 )
